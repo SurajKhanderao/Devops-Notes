@@ -1060,7 +1060,10 @@ aws eks list-pod-identity-associations \
   --cluster-name sk-cluster \
   --region eu-west-1
 ```
-
+### Restart deployment Rollout To apply ROLE attached 
+```
+kubectl rollout restart deployment.apps/external-secrets -n external-secrets
+```
 ### Helm Creates the Following Resources for ESO
 
 ```text
